@@ -8,7 +8,7 @@ windll.shcore.SetProcessDpiAwareness(1)
 
 class text(Text):
     def replace_text(self, replace):
-        self.configure(state="normal")
+        self.configure(state="normal", font="Calibri")
         output.delete("1.0", END)
         output.insert(INSERT, replace)
         output.configure(state="disabled")
