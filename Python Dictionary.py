@@ -18,7 +18,7 @@ def main(event):
 
     word = input.get()
     input.delete(0, len(word))
-    if word == "stop" or word == "stp":
+    if word == "exit":
         window.quit()
 
     if "define" in word or "Define" in word:
