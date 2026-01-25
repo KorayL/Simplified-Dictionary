@@ -1,10 +1,13 @@
+import sys
+
 from tkinter import *
 import sv_ttk
 from bs4 import BeautifulSoup
 import requests
 
-from ctypes import windll
-windll.shcore.SetProcessDpiAwareness(1)
+if sys.platform.startswith("win"):
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
 
 class text(Text):
     def replace_text(self, replace):
